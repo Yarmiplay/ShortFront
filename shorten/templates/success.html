@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortened Successfully</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h1 style="color: #5cb85c;">Link Shortened Successfully</h1>
+    <p style="color: #bbb;">Your link has been successfully shortened.</p>
+    <h3 style="color: #ddd;">{{ shortened_link }}</h3>
+    <p><a href="{{ shortened_link }}" target="_blank" style="color: #5bc0de; font-weight: bold; text-decoration: none;">Test it</a></p>
+    <p><a href="/create" style="color: #5bc0de; font-weight: bold; text-decoration: none;">Shorten Another Link</a></p>
+</div>
+
+</body>
+</html>
